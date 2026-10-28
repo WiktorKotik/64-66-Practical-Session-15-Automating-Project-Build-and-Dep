@@ -85,7 +85,3 @@ docker run -d -p 8080:80 ghcr.io/WiktorKotik/rec-studio:latest
 ## Pull Request
 
 Для проверки работы с Pull Request была создана ветка `feature/login-text` с изменением текста на странице входа. Pull Request можно посмотреть на вкладке Pull requests. В нём видно, что проверка `test` прошла, а задание `build` было пропущено, так как образ публикуется только после слияния в main.
-
-## Секреты
-
-В репозитории создан секрет `DB_CONNECTION_STRING` (Settings, Secrets and variables, Actions). Значение секретов в репозиторий не попадает, файл `.env` добавлен в `.gitignore` и `.dockerignore`.
