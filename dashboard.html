@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дашборд - REC/Studio</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a href="index.html" class="logo">REC/Studio</a>
+
+      <p class="nav-title">Основное</p>
+      <nav class="nav">
+        <a href="dashboard.html" class="active">Дашборд</a>
+        <a href="#">Альбомы</a>
+        <a href="#">Релизы</a>
+        <a href="#">Документы</a>
+        <a href="#">Финансы</a>
+        <a href="#">Дистрибуция</a>
+      </nav>
+
+      <p class="nav-title">Система</p>
+      <nav class="nav">
+        <a href="#">Настройки</a>
+        <a href="#">Админ-панель</a>
+      </nav>
+
+      <div class="profile">
+        <img src="assets/avatar.svg" alt="Аватар" class="avatar">
+        <div>
+          <b>Марина Соколова</b>
+          <span>Продюсер</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="main-top">
+        <h1>Дашборд</h1>
+        <div class="tools">
+          <input type="text" class="search" id="search" placeholder="Поиск по сессиям">
+          <button type="button" class="bell" id="bell" title="Уведомления">!</button>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="stats">
+          <div class="stat"><span>Активные альбомы</span><b>5</b></div>
+          <div class="stat"><span>Свободные слоты на неделе</span><b style="color: #22d3ee;">8</b></div>
+          <div class="stat"><span>В тираже</span><b style="color: #34d399;">2</b></div>
+          <div class="stat"><span>Договоры на подпись</span><b style="color: #fbbf24;">1</b></div>
+        </div>
+
+        <div class="grid">
+          <div>
+            <div class="panel">
+              <h2>Ближайшие сессии</h2>
+              <div class="session">
+                <span>Сегодня, 14:00</span>
+                <span>Альбом «Горизонт» — Зал А<small>Звукорежиссёр: Игорь С.</small></span>
+                <span class="tag ok">Подтверждена</span>
+              </div>
+              <div class="session">
+                <span>Завтра, 18:00</span>
+                <span>Альбом «Северный свет» — Зал Б<small>Звукорежиссёр: Игорь С.</small></span>
+                <span class="tag wait">Ждёт оплаты</span>
+              </div>
+              <div class="session">
+                <span>Завтра, 11:00</span>
+                <span>Сведение — Зал А<small>Звукорежиссёр: Диана К.</small></span>
+                <span class="tag ok">Подтверждена</span>
+              </div>
+              <div class="session">
+                <span>24 окт, 10:00</span>
+                <span>Альбом «Горизонт» — Зал Б<small>Звукорежиссёр: Диана К.</small></span>
+                <span class="tag mix">Сведение</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h2>Активные альбомы</h2>
+              <div class="album"><span>Горизонт<small>Продюсер: Марина Соколова</small></span><div class="bar"><i style="width: 72%;"></i></div></div>
+              <div class="album"><span>Северный свет<small>Продюсер: Марина Соколова</small></span><div class="bar"><i style="width: 32%;"></i></div></div>
+              <div class="album"><span>Эхо времён<small>Продюсер: Диана К.</small></span><div class="bar"><i style="width: 100%;"></i></div></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="panel accent">
+              <h2>Новое бронирование</h2>
+              <p>Забронируйте зал для записи вокала, сведения или мастеринга.</p>
+              <a href="#" class="btn btn-primary">Забронировать студию</a>
+            </div>
+
+            <div class="panel" id="notes">
+              <h2>Уведомления</h2>
+              <div class="note">Загружена новая версия трека<small>«Горизонт», трек 4, 5 минут назад</small></div>
+              <div class="note">Договор ожидает подписи<small>Исполнитель: Диана К., 1 час назад</small></div>
+              <div class="note">Слот 18:00 подтверждён<small>Зал Б, завтра</small></div>
+              <div class="note">Тираж отправлен на печать<small>Альбом «Эхо времён», вчера</small></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

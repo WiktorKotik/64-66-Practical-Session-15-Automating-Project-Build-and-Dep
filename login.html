@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход - REC/Studio</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth">
+    <div class="auth-card">
+      <a href="index.html" class="logo">REC/Studio</a>
+      <h1>Вход в личный кабинет</h1>
+      <p class="hint">Доступ к расписанию студии, проектам и договорам</p>
+
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="username">
+        </div>
+        <div class="field">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" placeholder="Введите пароль" autocomplete="current-password">
+        </div>
+        <a href="#" class="forgot">Забыли пароль?</a>
+        <p class="error" id="error"></p>
+        <button type="submit" class="btn btn-primary btn-block">Войти в систему</button>
+      </form>
+
+      <p class="alt">Нет аккаунта? <a href="#">Создать аккаунт</a></p>
+    </div>
+    <a href="index.html" class="back">Вернуться на главную</a>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
